@@ -1,1 +1,1 @@
-# cuda-introduction
+# cuda-agh-mpr-2021
