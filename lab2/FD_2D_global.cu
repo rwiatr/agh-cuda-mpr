@@ -83,7 +83,6 @@ int main() {
     for (int t = 0; t < steps; t++) {
         copy_array <<<dimGrid, dimBlock>>>(u_d, u_prev_d, N, BLOCKSIZE);
         update <<<dimGrid, dimBlock>>>(u_d, u_prev_d, N, h, dt, alpha, BLOCKSIZE);
-
     }
     double stop = get_time();
     checkErrors("update");
